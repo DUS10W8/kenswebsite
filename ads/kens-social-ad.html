@@ -1,0 +1,555 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ken's Hauling & Lawn Care Social Ad</title>
+    <style>
+      :root {
+        --green-950: #0b2411;
+        --green-900: #103317;
+        --green-800: #17451f;
+        --green-700: #1e6430;
+        --grass: #58a62d;
+        --yellow: #ffd633;
+        --ink: #142016;
+        --muted: #5b6b5e;
+        --paper: #fffdf5;
+        --line: #dce8d5;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; background: #111; }
+      body {
+        display: grid;
+        min-height: 100vh;
+        place-items: center;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      .ad {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 92% 93%, rgba(88, 166, 45, .2), transparent 22%),
+          linear-gradient(180deg, #fffdf4 0%, #f5f3e6 100%);
+      }
+
+      .ad::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        pointer-events: none;
+        background:
+          linear-gradient(90deg, rgba(13, 36, 19, .07) 1px, transparent 1px),
+          linear-gradient(0deg, rgba(13, 36, 19, .05) 1px, transparent 1px);
+        background-size: 54px 54px;
+        opacity: .32;
+      }
+
+      .top {
+        position: relative;
+        display: grid;
+        grid-template-columns: 52% 48%;
+        min-height: 635px;
+        background: var(--paper);
+      }
+
+      .brand-panel {
+        position: relative;
+        z-index: 2;
+        padding: 62px 52px 38px 58px;
+      }
+
+      .brand-lockup {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+      }
+
+      .brand-lockup img {
+        width: 168px;
+        height: 168px;
+        object-fit: contain;
+        border-radius: 50%;
+        background: #fff;
+        box-shadow: 0 18px 48px rgba(13, 36, 19, .17);
+      }
+
+      .brand-name {
+        font-size: 62px;
+        line-height: .86;
+        font-weight: 1000;
+        letter-spacing: -2px;
+        text-transform: uppercase;
+        color: var(--green-950);
+      }
+
+      .brand-name span {
+        display: block;
+        margin-top: 9px;
+        color: var(--green-700);
+        font-size: 26px;
+        line-height: 1.05;
+        letter-spacing: .08em;
+      }
+
+      .tagline {
+        margin: 34px 0 0 8px;
+        padding-left: 22px;
+        border-left: 7px solid var(--yellow);
+        color: var(--green-900);
+        font-size: 31px;
+        line-height: 1.12;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .subcopy {
+        max-width: 410px;
+        margin: 24px 0 0 8px;
+        color: var(--muted);
+        font-size: 25px;
+        line-height: 1.34;
+        font-weight: 700;
+      }
+
+      .badge-row {
+        display: flex;
+        gap: 14px;
+        margin: 35px 0 0 8px;
+        flex-wrap: wrap;
+      }
+
+      .mini-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 13px 18px;
+        border: 3px solid var(--green-700);
+        color: var(--green-900);
+        background: #f8fbef;
+        border-radius: 999px;
+        font-size: 19px;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .photo-panel {
+        position: relative;
+        overflow: hidden;
+        background: var(--green-950);
+        clip-path: polygon(8% 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .photo-panel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 64% center;
+        filter: saturate(1.04) contrast(1.04);
+      }
+
+      .photo-panel::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background:
+          linear-gradient(90deg, rgba(11, 36, 17, .12), transparent 45%),
+          linear-gradient(0deg, rgba(11, 36, 17, .45), transparent 52%);
+      }
+
+      .slant {
+        position: absolute;
+        z-index: 4;
+        top: 0;
+        bottom: 0;
+        left: 515px;
+        width: 22px;
+        transform: skewX(-12deg);
+        background: var(--yellow);
+        box-shadow: 0 0 0 9px rgba(255, 214, 51, .24);
+      }
+
+      .cta-band {
+        position: relative;
+        z-index: 4;
+        display: grid;
+        grid-template-columns: 1.25fr .9fr;
+        align-items: stretch;
+        min-height: 194px;
+        color: #fff;
+        background: linear-gradient(90deg, var(--green-950), var(--green-800));
+        border-top: 12px solid var(--yellow);
+        border-bottom: 12px solid var(--yellow);
+      }
+
+      .cta-main {
+        display: flex;
+        align-items: center;
+        gap: 26px;
+        padding: 28px 44px 28px 58px;
+      }
+
+      .cta-icon, .circle-icon {
+        display: grid;
+        place-items: center;
+        flex: 0 0 auto;
+        width: 92px;
+        height: 92px;
+        border-radius: 50%;
+        background: var(--yellow);
+        color: var(--green-950);
+      }
+
+      .cta-label {
+        color: var(--yellow);
+        font-size: 28px;
+        line-height: 1;
+        font-weight: 950;
+        text-transform: uppercase;
+      }
+
+      .phone {
+        display: block;
+        margin-top: 8px;
+        color: #fff;
+        font-size: 60px;
+        line-height: .95;
+        font-weight: 1000;
+        letter-spacing: -1.5px;
+      }
+
+      .cta-side {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-left: 2px solid rgba(255, 255, 255, .18);
+      }
+
+      .side-pill {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 11px;
+        padding: 24px 28px;
+        border-left: 2px solid rgba(255, 255, 255, .13);
+      }
+
+      .side-pill strong {
+        color: var(--yellow);
+        font-size: 36px;
+        line-height: 1;
+        font-weight: 1000;
+      }
+
+      .side-pill span {
+        color: rgba(255,255,255,.82);
+        font-size: 21px;
+        line-height: 1.1;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .content {
+        position: relative;
+        z-index: 3;
+        display: grid;
+        grid-template-columns: 1fr 330px;
+        gap: 38px;
+        padding: 48px 56px 40px;
+      }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 22px;
+        margin-bottom: 31px;
+        color: var(--green-950);
+        font-size: 39px;
+        line-height: 1;
+        font-weight: 1000;
+        text-transform: uppercase;
+      }
+
+      .section-title::before,
+      .section-title::after {
+        content: "";
+        height: 4px;
+        flex: 1;
+        background: var(--green-700);
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 21px;
+      }
+
+      .service {
+        min-height: 164px;
+        display: grid;
+        grid-template-columns: 70px 1fr;
+        gap: 18px;
+        padding: 22px 20px;
+        border: 3px solid var(--line);
+        background: rgba(255, 255, 255, .76);
+        border-radius: 8px;
+        box-shadow: 0 12px 26px rgba(18, 35, 20, .06);
+      }
+
+      .service-icon {
+        display: grid;
+        place-items: center;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        background: var(--green-700);
+        color: #fff;
+      }
+
+      .service h3 {
+        margin: 0 0 9px;
+        color: var(--green-950);
+        font-size: 25px;
+        line-height: 1.04;
+        font-weight: 1000;
+        text-transform: uppercase;
+      }
+
+      .service p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 19px;
+        line-height: 1.22;
+        font-weight: 750;
+      }
+
+      .promise {
+        padding: 28px 24px;
+        border-left: 5px solid var(--green-700);
+        background: #fff;
+        box-shadow: 0 18px 46px rgba(18, 35, 20, .1);
+      }
+
+      .promise-script {
+        color: var(--green-700);
+        font-family: "Segoe Script", "Bradley Hand ITC", cursive;
+        font-size: 43px;
+        line-height: 1.02;
+        text-align: center;
+      }
+
+      .promise-icon {
+        display: grid;
+        place-items: center;
+        width: 114px;
+        height: 114px;
+        margin: 30px auto 22px;
+        border: 5px solid var(--green-700);
+        border-radius: 50%;
+        color: var(--green-700);
+      }
+
+      .promise p {
+        margin: 0;
+        color: var(--ink);
+        font-size: 22px;
+        line-height: 1.34;
+        font-weight: 800;
+        text-align: center;
+      }
+.bottom {
+        position: absolute;
+        left: 56px;
+        right: 56px;
+        bottom: 44px;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 34px;
+        align-items: end;
+      }
+
+      .social-note {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        color: var(--green-950);
+      }
+
+      .leaf-mark {
+        position: relative;
+        width: 94px;
+        height: 94px;
+      }
+
+      .leaf-mark::before,
+      .leaf-mark::after {
+        content: "";
+        position: absolute;
+        width: 54px;
+        height: 82px;
+        background: var(--grass);
+        border-radius: 54px 0 54px 0;
+        transform: rotate(-35deg);
+        left: 15px;
+        top: 8px;
+      }
+
+      .leaf-mark::after {
+        transform: rotate(45deg);
+        left: 45px;
+        top: 24px;
+        background: var(--green-700);
+      }
+
+      .social-note strong {
+        display: block;
+        font-size: 34px;
+        line-height: 1;
+        font-weight: 1000;
+        text-transform: uppercase;
+      }
+
+      .social-note span {
+        display: block;
+        margin-top: 8px;
+        color: var(--muted);
+        font-size: 23px;
+        line-height: 1.15;
+        font-weight: 800;
+      }
+
+      .contact-card {
+        min-width: 448px;
+        padding: 26px 30px;
+        color: #fff;
+        background: var(--green-950);
+        border-radius: 8px;
+        box-shadow: 0 18px 46px rgba(18, 35, 20, .18);
+      }
+
+      .contact-card strong {
+        display: block;
+        color: var(--yellow);
+        font-size: 21px;
+        line-height: 1.08;
+        font-weight: 1000;
+        text-transform: uppercase;
+      }
+
+      .contact-card span {
+        display: block;
+        margin-top: 12px;
+        color: #fff;
+        font-size: 25px;
+        line-height: 1.16;
+        font-weight: 900;
+      }
+      svg { display: block; }
+    </style>
+  </head>
+  <body>
+    <main class="ad" aria-label="Ken's Hauling and Lawn Care social ad">
+      <section class="top">
+        <div class="brand-panel">
+          <div class="brand-lockup">
+            <img src="../assets/kens-logo.png" alt="Ken's Hauling & Lawn Care logo" />
+            <div class="brand-name">Ken's<span>Hauling & Lawn Care</span></div>
+          </div>
+          <div class="tagline">Fast hauling.<br />Sharp lawn care.<br />Handled clean.</div>
+          <p class="subcopy">Reliable junk hauling, yard cleanup, debris removal, and lawn care for the Tri-Cities.</p>
+          <div class="badge-row">
+            <div class="mini-badge">Local crew</div>
+            <div class="mini-badge">Free estimates</div>
+          </div>
+        </div>
+        <div class="slant" aria-hidden="true"></div>
+        <div class="photo-panel">
+          <img src="../assets/hero-realistic-v3.png" alt="Mower and trailer at sunset" />
+        </div>
+      </section>
+
+      <section class="cta-band">
+        <div class="cta-main">
+          <div class="cta-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 11.19 19 19.5 19.5 0 0 1 5 12.81 19.79 19.79 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.9.33 1.77.63 2.61a2 2 0 0 1-.45 2.11L8.09 9.59a16 16 0 0 0 6.32 6.32l1.15-1.15a2 2 0 0 1 2.11-.45c.84.3 1.71.51 2.61.63A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div>
+            <div class="cta-label">Call or text today</div>
+            <span class="phone">509-385-2334</span>
+          </div>
+        </div>
+        <div class="cta-side">
+          <div class="side-pill">
+            <strong>$</strong>
+            <span>Free estimates</span>
+          </div>
+          <div class="side-pill">
+            <strong>SMS</strong>
+            <span>Text a photo</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <div>
+          <h2 class="section-title">Our Services</h2>
+          <div class="services-grid">
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M8 6v14"/><path d="M16 6v14"/><path d="M5 20h14"/><path d="M10 3h4v3"/></svg></div>
+              <div><h3>Junk Hauling</h3><p>Furniture, appliances, cleanouts, bulky items.</p></div>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 6h.01M12 4h.01M16 6h.01M6 10h.01M18 10h.01"/></svg></div>
+              <div><h3>Yard Cleanups</h3><p>Brush, weeds, branches, leaves, storm debris.</p></div>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17h16"/><path d="M5 17a7 7 0 0 1 14 0"/><path d="M8 17v3"/><path d="M16 17v3"/><path d="M10 11h4"/></svg></div>
+              <div><h3>Lawn Care</h3><p>Mowing, edging, trimming, blowing, recurring care.</p></div>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg></div>
+              <div><h3>Debris Loads</h3><p>Lumber, remodel debris, pallets, jobsite cleanup.</p></div>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M8 7c-2 0-4 2-4 5 4 0 7-2 8-5"/><path d="M16 7c2 0 4 2 4 5-4 0-7-2-8-5"/><path d="M9 15c-2 0-4 2-4 5 4 0 6-2 7-5"/><path d="M15 15c2 0 4 2 4 5-4 0-6-2-7-5"/></svg></div>
+              <div><h3>Yard Waste</h3><p>Bagged waste, brush piles, branches, green debris.</p></div>
+            </article>
+            <article class="service">
+              <div class="service-icon" aria-hidden="true"><svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+              <div><h3>Fast Quotes</h3><p>Send photos by text for quick, clear pricing.</p></div>
+            </article>
+          </div>
+        </div>
+
+        <aside class="promise">
+          <div class="promise-script">Our Promise<br />to You</div>
+          <div class="promise-icon" aria-hidden="true"><svg width="66" height="66" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-11a7 7 0 0 1 14 0c0 6.65-7 11-7 11z"/><path d="M9 10l2 2 4-4"/></svg></div>
+          <p>We show up, keep the price clear, and leave your yard or jobsite looking handled.</p>
+        </aside>
+      </section>
+
+      <div class="bottom">
+        <div class="social-note">
+          <div class="leaf-mark" aria-hidden="true"></div>
+          <div><strong>Tri-Cities Local</strong><span>Kennewick, Pasco, Richland, West Richland, Benton City, and nearby areas.</span></div>
+        </div>
+        <div class="contact-card">
+          <strong>Message us for a fast quote</strong>
+          <span>ken@hirekens.com<br />hirekens.com</span>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
+
+
+
+
+
+
+

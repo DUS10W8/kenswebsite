@@ -1,4 +1,4 @@
-/* ── Mobile nav ──────────────────────────────────────────── */
+/* Mobile nav */
 const hamburger = document.getElementById("hamburger");
 const mainNav   = document.getElementById("main-nav");
 
@@ -17,13 +17,13 @@ mainNav?.querySelectorAll("a").forEach(link => {
   });
 });
 
-/* ── Header scroll effect ────────────────────────────────── */
+/* Header scroll effect */
 const header = document.querySelector(".site-header");
 window.addEventListener("scroll", () => {
   header?.classList.toggle("scrolled", window.scrollY > 40);
 }, { passive: true });
 
-/* ── Quote form ──────────────────────────────────────────── */
+/* Quote form */
 const quoteForm   = document.querySelector("#quote-form");
 const formSuccess = document.getElementById("form-success");
 
@@ -41,11 +41,9 @@ quoteForm?.addEventListener("submit", (event) => {
     service ? `Service: ${service}` : "",
     details ? `Details: ${details}` : ""
   ].filter(Boolean).join("\n");
-
-  const subject     = encodeURIComponent("Quote Request – Ken's Hauling & Lawn Care");
   const encodedBody = encodeURIComponent(body);
 
-  window.location.href = `mailto:ken@hirekens.com?subject=${subject}&body=${encodedBody}`;
+  window.location.href = `sms:+15093852334?body=${encodedBody}`;
 
   if (formSuccess) {
     formSuccess.hidden = false;
@@ -53,7 +51,7 @@ quoteForm?.addEventListener("submit", (event) => {
   }
 });
 
-/* ── Scroll-reveal (lightweight) ────────────────────────── */
+/* Scroll-reveal (lightweight) */
 if ("IntersectionObserver" in window) {
   const style = document.createElement("style");
   style.textContent = `
