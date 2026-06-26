@@ -14,9 +14,9 @@
       property="og:description"
       content="Same-day hauling and dependable lawn care for homes, rentals, and small businesses in the Tri-Cities."
     />
-    <meta property="og:image" content="assets/kens-before-after-banner.png" />
+    <meta property="og:image" content="assets/hero-realistic-v3.png" />
     <link rel="icon" href="assets/kens-logo.png" />
-    <link rel="preload" href="assets/kens-before-after-banner.png" as="image" />
+    <link rel="preload" href="assets/hero-realistic-v3.png" as="image" />
     <link rel="stylesheet" href="styles.css" />
     <script type="application/ld+json">
       {
@@ -25,218 +25,352 @@
         "name": "Ken's Hauling & Lawn Care",
         "image": "assets/kens-logo.png",
         "telephone": "+15093852334",
+        "email": "ken@hirekens.com",
         "areaServed": ["Kennewick WA", "Pasco WA", "Richland WA", "West Richland WA", "Tri-Cities WA"],
         "priceRange": "$$",
         "description": "Junk hauling, yard cleanups, debris removal, and lawn care in the Tri-Cities, Washington."
       }
     </script>
   </head>
-  <body>
+    <body>
     <header class="site-header" aria-label="Primary navigation">
       <a class="brand" href="#top" aria-label="Ken's Hauling and Lawn Care home">
-        <img src="assets/kens-logo.png" alt="Ken's Hauling & Lawn Care logo" />
+        <img src="assets/kens-logo.png" alt="Ken's Hauling & Lawn Care logo" width="46" height="46" />
         <span>Ken's</span>
       </a>
-      <nav>
+
+      <nav id="main-nav" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#work">Work</a>
         <a href="#areas">Areas</a>
-        <a href="https://www.facebook.com/profile.php?id=61578412769982" target="_blank" rel="noopener">Facebook</a>
+        <a href="#quote">Get a Quote</a>
       </nav>
-      <a class="header-call" href="tel:+15093852334">509-385-2334</a>
+
+      <div class="header-right">
+        <a class="header-call" href="tel:+15093852334">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l1.02-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          509-385-2334
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <main id="top">
       <section class="hero" aria-label="Fast hauling and lawn care">
-        <picture>
-          <img src="assets/kens-before-after-banner.png" alt="Before and after yard cleanup by Ken's Hauling and Lawn Care" />
-        </picture>
+        <img class="hero-bg" src="assets/hero-realistic-v3.png" alt="" aria-hidden="true" />
         <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow">Tri-Cities, Washington</p>
-          <h1>Fast hauling and sharp lawn care, handled clean.</h1>
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+            Tri-Cities, Washington
+          </div>
+          <h1>Fast hauling.<br>Sharp lawn care.<br>Handled clean.</h1>
           <p class="hero-copy">
-            Junk removal, yard waste, construction debris, mowing, edging, and seasonal cleanups for homes,
-            rentals, and small businesses.
+            Junk removal, yard waste, construction debris, mowing, edging, and seasonal cleanups - for homes, rentals, and small businesses.
           </p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://m.me/61578412769982" target="_blank" rel="noopener">Message for a quote</a>
-          <a class="button secondary" href="tel:+15093852334">Call 509-385-2334</a>
-          <a class="button secondary" href="https://www.facebook.com/profile.php?id=61578412769982" target="_blank" rel="noopener">Facebook</a>
-        </div>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="sms:+15093852334">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text for a quote
+            </a>
+            <a class="btn btn-ghost" href="tel:+15093852334">Call 509-385-2334</a>
+            <a class="btn btn-ghost" href="mailto:ken@hirekens.com">Email Ken's</a>
+          </div>
           <div class="trust-row" aria-label="Service highlights">
-            <span>Same-day options</span>
-            <span>Licensed dump runs</span>
-            <span>Free fast estimates</span>
+            <div class="trust-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Same-day options
+            </div>
+            <div class="trust-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              Licensed dump runs
+            </div>
+            <div class="trust-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Free fast estimates
+            </div>
           </div>
         </div>
-      </section>
 
-      <section class="quick-quote" aria-label="Quick quote details">
-        <div>
-          <p class="section-kicker">Get priced fast</p>
-          <h2>Send a few photos. Get a clear quote.</h2>
+        <div class="scroll-hint" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
         </div>
-        <form id="quote-form">
-          <label>
-            Name
-            <input name="name" autocomplete="name" placeholder="Your name" />
+      </section>
+<section class="quick-quote" id="quote" aria-label="Quick quote request">
+        <div class="quote-copy">
+          <p class="section-kicker">Get priced fast</p>
+          <h2>Send details.<br>Get a clear quote.</h2>
+          <p class="quote-sub">Describe the job and we'll reply with a price - usually within the hour.</p>
+          <div class="quote-alts">
+            <a href="sms:+15093852334" class="quote-alt-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Or just text a photo
+            </a>
+            <a href="tel:+15093852334" class="quote-alt-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l1.02-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              Or call us directly
+            </a>
+          </div>
+        </div>
+        <form id="quote-form" novalidate>
+          <div class="form-row">
+            <label>
+              <span>Name</span>
+              <input name="name" autocomplete="name" placeholder="Your name" />
+            </label>
+            <label>
+              <span>Service needed</span>
+              <select name="service">
+                <option>Junk hauling</option>
+                <option>Yard cleanup</option>
+                <option>Lawn care</option>
+                <option>Construction debris</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <label class="label-full">
+            <span>Job details</span>
+            <textarea name="details" rows="4" placeholder="Address area, pile size, timing, gate access..."></textarea>
           </label>
-          <label>
-            Service
-            <select name="service">
-              <option>Junk hauling</option>
-              <option>Yard cleanup</option>
-              <option>Lawn care</option>
-              <option>Construction debris</option>
-              <option>Other</option>
-            </select>
-          </label>
-          <label>
-            Details
-            <textarea name="details" rows="3" placeholder="Address area, pile size, timing, gate access..."></textarea>
-          </label>
-          <button type="submit">Message estimate request</button>
+          <button type="submit" class="btn-submit">
+            <span class="btn-label">Send estimate request</span>
+            <svg class="btn-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </button>
+          <p class="form-success" id="form-success" aria-live="polite" hidden>
+            Done: Email drafted - your mail app will open to send it.
+          </p>
         </form>
       </section>
 
+      <!-- â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
       <section class="section-shell" id="services">
         <div class="section-heading">
-          <p class="section-kicker">Services</p>
+          <p class="section-kicker">What we do</p>
           <h2>One crew for the outside mess.</h2>
-          <p>
-            Book a single pickup or put the lawn on a regular schedule. Ken's keeps the scope practical,
-            the price clear, and the site swept before leaving.
-          </p>
+          <p>Book a single pickup or put the lawn on a regular schedule. Ken's keeps the scope practical, the price clear, and the site swept before leaving.</p>
         </div>
         <div class="service-grid">
-          <article>
-            <span class="service-icon">01</span>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14H6L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/><path d="M9 6V4h6v2"/></svg>
+            </div>
             <h3>Junk hauling</h3>
             <p>Furniture, appliances, garage cleanouts, rental turnovers, bagged trash, and bulky items.</p>
           </article>
-          <article>
-            <span class="service-icon">02</span>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V12"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M8 6h.01M12 4h.01M16 6h.01M12 10h.01M6 10h.01M18 10h.01M8 14h.01M12 16h.01M16 14h.01"/><path d="M2 8c0-2.2 1.8-4 4-4s4 1.8 4 4-1.8 4-4 4-4-1.8-4-4z" stroke="none" fill="none"/><path d="M5 3C6.5 2 9 2 9 5"/></svg>
+            </div>
             <h3>Yard waste removal</h3>
             <p>Branches, brush, leaves, weeds, sod, storm debris, and overgrown-property cleanup.</p>
           </article>
-          <article>
-            <span class="service-icon">03</span>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/><path d="M8 11h6"/><path d="M11 8v6"/></svg>
+            </div>
             <h3>Lawn maintenance</h3>
             <p>Mowing, edging, trimming, blowing, and recurring care during the Tri-Cities growing season.</p>
           </article>
-          <article>
-            <span class="service-icon">04</span>
+          <article class="service-card">
+            <div class="service-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
             <h3>Construction debris</h3>
             <p>Lumber, drywall scraps, remodel debris, pallets, fixtures, and jobsite load-outs.</p>
           </article>
         </div>
       </section>
 
-      <section class="photo-band" id="work" aria-label="Recent work examples">
-        <div class="photo-copy">
-          <p class="section-kicker">Proof on the trailer</p>
-          <h2>Real cleanup capacity for residential and light commercial jobs.</h2>
-          <p>
-            The right trailer setup matters. Ken's can load loose debris, bulky furniture, lumber, brush,
-            and everyday clutter without leaving the customer to rent equipment or make dump runs.
-          </p>
-        </div>
-        <div class="photo-grid">
-          <figure class="wide">
-            <img src="assets/junk-hauling-truck-trailer.png" alt="Ken's truck and trailer loaded with household junk" />
-            <figcaption>Truck and trailer hauling in town</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/construction-debris-haul.png" alt="Trailer loaded with lumber and construction debris" />
-            <figcaption>Remodel and lumber debris</figcaption>
-          </figure>
-          <figure>
-            <img src="assets/tri-cities-lawn-care.png" alt="Freshly maintained lawn in the Tri-Cities" />
-            <figcaption>Clean lawn finish</figcaption>
-          </figure>
+      <!-- â”€â”€ PHOTO BAND / WORK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+      <section class="work-section" id="work" aria-label="Recent work examples">
+        <div class="work-inner">
+          <div class="work-copy">
+            <p class="section-kicker">Proof on the trailer</p>
+            <h2>Real capacity for residential and commercial jobs.</h2>
+            <p>The right trailer setup matters. Ken's can load loose debris, bulky furniture, lumber, brush, and everyday clutter - no rentals, no dump runs on your end.</p>
+            <a class="btn btn-outline-green" href="sms:+15093852334">Text a photo of your job</a>
+          </div>
+          <div class="photo-grid">
+            <figure class="photo-wide">
+              <img src="assets/real-backyard-mowed-fence.jpg" alt="Large mowed backyard with clean stripes" loading="lazy" />
+              <figcaption>Residential lawn maintenance</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/real-trailer-full-loaded.jpg" alt="Ken's trailer fully loaded for hauling" loading="lazy" />
+              <figcaption>Full load hauled and cleared</figcaption>
+            </figure>
+            <figure>
+              <img src="assets/real-spartan-zeroturn.jpg" alt="Spartan zero-turn mower ready for service" loading="lazy" />
+              <figcaption>Pro equipment, clean results</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
-      <section class="section-shell split" id="areas">
-        <div>
+      <!-- â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+      <section class="process section-shell">
+        <div class="section-heading centered">
+          <p class="section-kicker">Simple booking</p>
+          <h2>How it works</h2>
+          <p>Three steps from first text to finished job.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-connector" aria-hidden="true"></div>
+            <h3>Send photos</h3>
+            <p>Text the pile, yard, or lawn area with your location and timing needs.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-connector" aria-hidden="true"></div>
+            <h3>Approve the quote</h3>
+            <p>Get a straightforward price before the crew starts - no surprises.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Done and swept</h3>
+            <p>The load is removed, the lawn is cut, and the work area is cleaned up before we leave.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- â”€â”€ AREAS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+      <section class="areas-section section-shell" id="areas">
+        <div class="areas-copy">
           <p class="section-kicker">Local service area</p>
           <h2>Serving the Tri-Cities and nearby neighborhoods.</h2>
-          <p>
-            Ken's is built for quick local response across Kennewick, Pasco, Richland, West Richland,
-            Benton City, Burbank, Finley, and surrounding areas.
-          </p>
+          <p>Ken's is built for quick local response across Kennewick, Pasco, Richland, West Richland, Benton City, Burbank, Finley, and surrounding areas.</p>
         </div>
-        <div class="area-card">
-          <h3>Popular calls</h3>
-          <ul>
-            <li>Move-out junk removal</li>
-            <li>Spring and fall yard cleanup</li>
-            <li>Brush piles and branches</li>
-            <li>Weekly and biweekly mowing</li>
-            <li>Small jobsite debris loads</li>
-          </ul>
+        <div class="areas-right">
+          <div class="area-card">
+            <h3>Popular calls</h3>
+            <ul>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Move-out junk removal
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Spring and fall yard cleanup
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Brush piles and branches
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Weekly and biweekly mowing
+              </li>
+              <li>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Small jobsite debris loads
+              </li>
+            </ul>
+          </div>
+          <div class="contact-card">
+            <h3>Reach Ken's</h3>
+            <a href="sms:+15093852334" class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Text a photo
+            </a>
+            <a href="tel:+15093852334" class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.65 3.38 2 2 0 0 1 3.62 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.76a16 16 0 0 0 6.29 6.29l1.02-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              509-385-2334
+            </a>
+            <a href="mailto:ken@hirekens.com" class="contact-row">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              ken@hirekens.com
+            </a>
+          </div>
         </div>
       </section>
 
-      <section class="process">
-        <p class="section-kicker">Simple booking</p>
-        <h2>How it works</h2>
-        <div class="steps">
-          <div>
-            <strong>1</strong>
-            <h3>Send photos</h3>
-            <p>Text the pile, yard, or lawn area with your location and timing.</p>
+      <!-- â”€â”€ FAQ â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
+      <section class="faq-section">
+        <div class="faq-inner">
+          <div class="section-heading">
+            <p class="section-kicker">Common questions</p>
+            <h2>Clear answers before you book.</h2>
           </div>
-          <div>
-            <strong>2</strong>
-            <h3>Approve the quote</h3>
-            <p>Get a straightforward price before the crew starts.</p>
-          </div>
-          <div>
-            <strong>3</strong>
-            <h3>Done and swept</h3>
-            <p>The load is removed, the lawn is cut, and the work area is cleaned up.</p>
+          <div class="faq-list">
+            <details>
+              <summary>
+                Do you offer same-day hauling?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p>Often, yes. Availability depends on route, load size, and disposal timing. Text photos for the fastest answer.</p>
+            </details>
+            <details>
+              <summary>
+                Can you take yard waste and junk in the same visit?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p>Yes. Mixed loads can usually be handled, with pricing based on volume, weight, labor, and disposal requirements.</p>
+            </details>
+            <details>
+              <summary>
+                Do I need to be home?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p>Not always. If access is clear and the job is approved by text, many pickups and lawn visits can be completed while you are away.</p>
+            </details>
+            <details>
+              <summary>
+                What areas do you serve?
+                <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+              </summary>
+              <p>Kennewick, Pasco, Richland, West Richland, Benton City, Burbank, Finley, and surrounding Tri-Cities communities.</p>
+            </details>
           </div>
         </div>
       </section>
 
-      <section class="faq section-shell">
-        <div class="section-heading">
-          <p class="section-kicker">Common questions</p>
-          <h2>Clear answers before you book.</h2>
-        </div>
-        <details>
-          <summary>Do you offer same-day hauling?</summary>
-          <p>Often, yes. Availability depends on route, load size, and disposal timing. Text photos for the fastest answer.</p>
-        </details>
-        <details>
-          <summary>Can you take yard waste and junk in the same visit?</summary>
-          <p>Yes. Mixed loads can usually be handled, with pricing based on volume, weight, labor, and disposal requirements.</p>
-        </details>
-        <details>
-          <summary>Do I need to be home?</summary>
-          <p>Not always. If access is clear and the job is approved by text, many pickups and lawn visits can be completed while you are away.</p>
-        </details>
-      </section>
-
+      <!-- â”€â”€ FINAL CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
       <section class="final-cta">
-        <img src="assets/kens-logo.png" alt="" aria-hidden="true" />
-        <div>
-          <p class="section-kicker">Ready when the pile is</p>
-          <h2>Get Ken's on the schedule.</h2>
-          <p>Text a photo for the fastest quote in Kennewick, Pasco, Richland, and the Tri-Cities.</p>
+        <div class="cta-inner">
+          <img src="assets/kens-logo.png" alt="Ken's Hauling & Lawn Care" width="96" height="96" />
+          <div class="cta-text">
+            <p class="section-kicker">Ready when the pile is</p>
+            <h2>Get Ken's on the schedule.</h2>
+            <p>Text a photo for the fastest quote in Kennewick, Pasco, Richland, and the Tri-Cities.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="sms:+15093852334">Text Ken's</a>
+            <a class="btn btn-outline-white" href="mailto:ken@hirekens.com">Send an email</a>
+          </div>
         </div>
-        <a class="button primary" href="https://m.me/61578412769982" target="_blank" rel="noopener">Message Ken's</a>
       </section>
+
     </main>
 
+    <!-- â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <footer>
-      <p>Ken's Hauling & Lawn Care</p>
-      <a href="tel:+15093852334">509-385-2334</a>
-      <a href="https://www.facebook.com/profile.php?id=61578412769982" target="_blank" rel="noopener">Facebook</a>
-      <span>Tri-Cities, WA</span>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/kens-logo.png" alt="" aria-hidden="true" width="40" height="40" />
+          <div>
+            <strong>Ken's Hauling & Lawn Care</strong>
+            <span>Tri-Cities, WA</span>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#services">Services</a>
+          <a href="#work">Work</a>
+          <a href="#areas">Areas</a>
+          <a href="#quote">Get a Quote</a>
+        </nav>
+        <div class="footer-contact">
+          <a href="tel:+15093852334">509-385-2334</a>
+          <a href="mailto:ken@hirekens.com">ken@hirekens.com</a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2025 Ken's Hauling & Lawn Care. All rights reserved.</p>
     </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
