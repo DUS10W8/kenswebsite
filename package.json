@@ -1,0 +1,15 @@
+{
+  "name": "kenswebsite",
+  "version": "1.0.0",
+  "description": "Ken's Hauling & Lawn Care website",
+  "type": "module",
+  "scripts": {
+    "serve": "node serve-local.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/analytics": "^1.4.1"
+  }
+}
